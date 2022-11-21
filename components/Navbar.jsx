@@ -11,7 +11,9 @@ function Navbar() {
     setNav((preStatus) => !preStatus);
   };
   return (
-    <div className="fixed w-full h-20 shadow-xl z-[100]">
+    <div
+    style={{ backgroundColor: `#ecf0f3`}}
+    className="fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300">
       {/* <--Top Navigation Bar--> */}
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Image src={NavLogo} alt="/" width="50" />
@@ -92,16 +94,16 @@ function Navbar() {
             <div className="pt-40">
               <p className="uppercase tracking-widest text-[#5651e5]">{`Let's connect`}</p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duratin-300">
+                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                   <FaLinkedinIn />
                 </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duratin-300">
+                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                   <FaGithub />
                 </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duratin-300">
+                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                   <AiOutlineMail />
                 </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duratin-300">
+                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                   <BsPersonLinesFill />
                 </div>
               </div>
